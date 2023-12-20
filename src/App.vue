@@ -1,11 +1,9 @@
 <template>
   <v-app>
     <v-main>
-      <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-        <v-container>
-          <form-sheet></form-sheet>
-        </v-container>
-      </v-parallax>
+        <v-layout :class="['fluid', 'fill-height','align-center', 'justify-center', 'bg-indigo-darken-1']">
+          <form-sheet />
+        </v-layout>
     </v-main>
   </v-app>
 </template>

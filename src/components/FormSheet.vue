@@ -1,7 +1,10 @@
 <template>
-    <v-sheet :elevation="3" :width="500" rounded>
+    <v-sheet :elevation="3" :width="700" rounded>
         <v-container>
-            <div class="text-h2 mb-5">Development Request</div>
+            <v-container class="d-flex align-center justify-space-between"> 
+                <v-img src="../assets/EdCo Logo.png" max-width="200" aspect-ratio="16/9"></v-img>
+                <h2>Development Request Form</h2>
+            </v-container>
             <FormContent />
         </v-container>
     </v-sheet>
@@ -9,4 +12,4 @@
 
 <script setup>
 import FormContent from './FormContent.vue';
-</script>
+</script> 
