@@ -21,19 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Set Git user
-        run: |
-          git config user.email "dominiclingham@outlook.com"
-          git config user.name "DominicLingham"
-
-      - name: Print Git Config #Debug git config
-        run: |
-          git config --list
-
       - name: Build and deploy to GitHub Pages
         run: |
           npm run predeploy
           npm run deploy
-        env:
-          NODE_ENV: production
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
