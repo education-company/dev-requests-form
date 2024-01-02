@@ -28,6 +28,7 @@ jobs:
 
       - name: Build and deploy to GitHub Pages
         run: |
+          npm run predeploy
           npm run deploy
         env:
           NODE_ENV: production
