@@ -3,7 +3,7 @@ name: Deployment Trigger
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-test-deploy:
