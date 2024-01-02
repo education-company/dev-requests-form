@@ -3,7 +3,7 @@
         <v-container>
             <v-container class="d-flex align-center justify-space-between"> 
                 <v-img src="../assets/EdCo Logo.png" max-width="200" aspect-ratio="16/9"></v-img>
-                <h2>EdCo Development Request Form Update</h2>
+                <h2>EdCo Development Request Form</h2>
             </v-container>
             <FormContent />
         </v-container>
