@@ -20,6 +20,12 @@ jobs:
 
       - run: npm run predeploy
 
+      - name: Run Cypress Tests
+        run: |
+          npm run dev & # Run your local server in the background
+          npx cypress run --config baseUrl=http://localhost:3000
+          kill $(jobs -p)
+
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
