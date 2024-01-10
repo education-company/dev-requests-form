@@ -35,7 +35,7 @@ describe("template spec", () => {
     cy.get(".error-message").should("contain.text", "Please complete the form");
   });
 
-  it.only("Email address format is validated", () => {
+  it("Email address format is validated", () => {
     let incorrectEmailFormat = "email.test";
     cy.get("#input-7").click().type(incorrectEmailFormat);
     cy.get(".v-messages__message").should("exist");
