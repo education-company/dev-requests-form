@@ -17,6 +17,7 @@
     "vuetify": "^3.0.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/cli-plugin-unit-jest": "~5.0.0",
     "@vue/test-utils": "^2.4.0-alpha.2",

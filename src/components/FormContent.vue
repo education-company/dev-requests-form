@@ -5,7 +5,8 @@
                 variant="outlined" />
         </v-input>
         <v-input>
-            <v-text-field v-model="lastname" clearable label="Last name" :rules="requiredField" variant="outlined" />
+            <v-text-field v-model="lastname" clearable label="Last name" :rules="requiredField"
+                variant="outlined" />
         </v-input>
         <v-input>
             <v-text-field v-model="email" clearable label="Email address" placeholder="john.doe@educationcompany.co.uk"
@@ -16,7 +17,7 @@
         </v-input>
         <v-input>
             <v-select v-model="priority" label="Priority" :items="['Low', 'Medium', 'High']" :rules="requiredField"
-                variant="outlined" />
+                variant="outlined" data-cy="priority-select" />
         </v-input>
         <v-input>
             <v-textarea v-model="request" label="Request" :rules="requiredField" variant="outlined" />
@@ -27,11 +28,6 @@
     <div class="form-messages">
         <p v-if="showIncompleteFormMessage && !submissionSuccessful" class="error-message">Please complete the form</p>
         <p v-if="submissionSuccessful" class="success-message">Your form has been submitted successfully</p>
-        <!-- <v-progress-circular
-      indeterminate
-      color="primary"
-      v-if="loading"
-    ></v-progress-circular> -->
     </div>
 </template>
 
